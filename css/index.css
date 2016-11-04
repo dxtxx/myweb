@@ -72,6 +72,9 @@ body {
 .fr {
   float: right;
 }
+.en {
+  margin-top: 15px;
+}
 header {
   width: 100%;
   height: auto;
@@ -231,7 +234,6 @@ nav {
     color: rgba(0, 0, 0, 0.7);
   }
   .content .about .about-c-right {
-    margin-top: 30px;
     width: 70%;
     height: 300px;
     float: right;
