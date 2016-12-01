@@ -72,6 +72,9 @@ body {
 .fr {
   float: right;
 }
+.en {
+  margin-top: 15px;
+}
 header {
   width: 100%;
   height: auto;
@@ -120,13 +123,13 @@ nav {
   }
   .banner {
     width: 100%;
-    height: 600px;
+    height: 350px;
   }
   .banner a {
     width: 100%;
-    height: 600px;
+    height: 350px;
     display: block;
-    background: url(../images/3.jpg) no-repeat center center;
+    background: url(../images/2.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
     transfrom: all .3s;
@@ -162,5 +165,193 @@ nav {
   }
   .banner a .t4 {
     float: right;
+  }
+  .content {
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  .content:after {
+    content: "";
+    height: 0;
+    width: 0;
+    display: block;
+    clear: both;
+  }
+  .content-c {
+    color: #000;
+    text-align: left;
+  }
+  .content-c span {
+    float: left;
+    width: 700px;
+    display: block;
+  }
+  .content-c span a {
+    color: #0E6DB0;
+    text-decoration: underline;
+  }
+  .content-c span p {
+    color: #000;
+    font-size: 1.2rem;
+  }
+  .content .about {
+    float: right;
+    margin: 30px auto;
+    width: 250px;
+    height: 300px;
+    border: 2px solid #ccc;
+    background: url(../images/m1.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  footer {
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .nav-mi {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-ma {
+    display: none;
+  }
+  .nav-mi {
+    height: 50px;
+    poition: relative;
+    padding: 10px 0px;
+  }
+  .nav-mi ul {
+    opacity: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.6s;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+    margin-left: -100%;
+  }
+  .nav-mi ul.hot {
+    margin-left: 0;
+    opacity: 1;
+  }
+  .nav-mi ul a {
+    transition: all .8s;
+    opacity: 0.8;
+    width: 100%;
+    display: block;
+    line-height: 45px;
+  }
+  .nav-mi ul a:hover {
+    opacity: 0.9;
+    transform: scale(1.1, 1.1);
+    background: rgba(192, 198, 201, 0.7);
+  }
+  .nav-mi-right {
+    width: 30px;
+    height: 30px;
+    background: url(../images/l.png) no-repeat center 0;
+    background-size: cover;
+    margin: 0 auto;
+    transition: all .7s;
+    z-index: 2;
+  }
+  .nav-mi-right:hover {
+    transform: scale(1.1, 1.1);
+  }
+  .banner {
+    width: 100%;
+    height: 250px;
+  }
+  .banner a {
+    width: 100%;
+    height: 250px;
+    display: block;
+    background: url(../images/2.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    transfrom: all .3s;
+  }
+  .banner a .title {
+    width: auto;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    color: rgba(68, 68, 68, 0.9);
+    transition: all .5s;
+  }
+  .banner a .title .hot {
+    transform: poacity:1;
+  }
+  .banner a h3 {
+    font-size: 5rem;
+    color: rgba(68, 68, 68, 0.6);
+  }
+  .banner a .t1 {
+    font-sishtion: 1.5rem;
+    margin-left: 10%;
+    float: left;
+    color: rgba(68, 68, 68, 0.7);
+  }
+  .banner a .t2 {
+    font-size: 1.2rem;
+    float: left;
+  }
+  .banner a .t3 {
+    font-size: 1.0rem;
+    float: right;
+  }
+  .banner a .t4 {
+    float: right;
+  }
+  .content {
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  .content:after {
+    content: "";
+    height: 0;
+    width: 0;
+    display: block;
+    clear: both;
+  }
+  .content-c {
+    color: #000;
+    text-align: center;
+  }
+  .content-c span {
+    max-width: 700px;
+    display: block;
+  }
+  .content-c span a {
+    color: #0E6DB0;
+    text-decoration: underline;
+  }
+  .content-c span p {
+    color: #000;
+    font-size: 1.6rem;
+  }
+  .content .about {
+    margin: 30px auto;
+    width: 250px;
+    height: 300px;
+    border: 2px solid #ccc;
+    background: url(../images/m1.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  footer {
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.7);
   }
 }
